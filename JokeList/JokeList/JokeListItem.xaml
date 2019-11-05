@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JokeList.JokeListItem" Title="{Binding Name}">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Joke" />
+        <Entry Text="{Binding Joke}" />
+        <Label Text="Punchline" />
+        <Entry Text="{Binding Punchline}" />
+        <Label Text="Delete" />
+        <Switch IsToggled="{Binding Delete}" />
+        <Button Text="Save" Clicked="OnSaveClicked" />
+        <Button Text="Delete" Clicked="OnDeleteClicked" />
+        <Button Text="Cancel" Clicked="OnCancelClicked" />
+    </StackLayout>
+</ContentPage>
